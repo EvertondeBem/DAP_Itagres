@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-image: url(https://www.itagres.com.br/wp-content/uploads/2023/03/IRON-RUSTICO-Face07-copiar-scaled.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 1px rgb(155, 148, 139);
+    display: block;
+}
+
+img {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(73, 50, 1);
+}
+label{
+    font-size: 18px;
+}
+input {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid rgb(73,50,1);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 20px;
+    color: rgb(73, 50, 1);
+    
+}
+
+button {
+    background-color: transparent;
+    border-color: rgb(73, 50, 1);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 20pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: .4s ease-out;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: rgb(73, 50, 1);
+    color: #fff;
+}
+
+#resultado{
+    text-align: center;
+    font-size: 30px;
+    color:  rgb(73, 50, 1);
+}

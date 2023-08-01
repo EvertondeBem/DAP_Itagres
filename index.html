@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
-    <h1>Calculadora de Densidade Aparente - DAP</h1>
-    <label for="pesoSeco">Peso Seco:</label>
-    <input type="number" id="pesoSeco">
-    <br>
-    <label for="pesoMolhado">Peso Molhado:</label>
-    <input type="number" id="pesoMolhado">
-    <br>
-    <button onclick="calcularPesoFinal()">Calcular</button>
-    <br>
-    <p id="resultado"></p>
 
-    <script>
-        //fazer ajustes multiquery
-        function calcularPesoFinal() {
-            const pesoMolhado = parseFloat(document.getElementById('pesoMolhado').value);
-            const pesoSeco = parseFloat(document.getElementById('pesoSeco').value);
-
-            const resultado1 = pesoMolhado * 0.9901;
-            const resultado2 = pesoSeco - resultado1;
-            const valorFinal = pesoSeco / resultado2;
-
-            const resultadoElement = document.getElementById('resultado');
-            resultadoElement.textContent = `Valor Final: ${valorFinal.toFixed(2)}`;
-        }
-    </script>
+    <div class="container">
+        
+        <div class="card">
+            <img id="logo" src="./img/images.png" alt="">
+            <h1>Calculadora de Densidade Aparente - DAP</h1>
+            <label for="pesoSeco">Peso Seco:</label>
+            <input type="number" id="pesoSeco"><br>
+            <label for="pesoMolhado">Peso Molhado:</label>
+            <input type="number" id="pesoMolhado"><br>
+            <button onclick="calcularPesoFinal()">Calcular</button>
+            <br>
+            <p id="resultado"></p>
+        </div>
+    </div>
 </body>
 </html>
