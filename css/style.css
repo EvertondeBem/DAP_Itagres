@@ -87,3 +87,8 @@ button:hover{
     font-size: 30px;
     color:  rgb(73, 50, 1);
 }
+#historico{
+    font-size: 18px;
+    color: rgb(73, 50, 1);
+    list-style: none;
+}
