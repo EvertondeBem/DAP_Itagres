@@ -72,7 +72,7 @@ button {
     outline: none;
     transition: .4s ease-out;
 }
-.justify-center{
+.button{
     display: flex;
     justify-content: center;
 }
