@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de Peso Final</h1>
+    <label for="pesoMolhado">Peso Molhado:</label>
+    <input type="number" id="pesoMolhado">
+    <br>
+    <label for="pesoSeco">Peso Seco:</label>
+    <input type="number" id="pesoSeco">
+    <br>
+    <button onclick="calcularPesoFinal()">Calcular</button>
+    <br>
+    <p id="resultado"></p>
+
+    <script>
+        //fazer ajustes multiquery
+        function calcularPesoFinal() {
+            const pesoMolhado = parseFloat(document.getElementById('pesoMolhado').value);
+            const pesoSeco = parseFloat(document.getElementById('pesoSeco').value);
+
+            const resultado1 = pesoMolhado * 0.9901;
+            const resultado2 = pesoSeco - resultado1;
+            const valorFinal = pesoSeco / resultado2;
+
+            const resultadoElement = document.getElementById('resultado');
+            resultadoElement.textContent = `Valor Final: ${valorFinal.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
