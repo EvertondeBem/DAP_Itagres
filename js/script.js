@@ -15,7 +15,7 @@ function calcularPesoFinal() {
     // Armazenando o resultado no histórico
     const historico = JSON.parse(localStorage.getItem('historico')) || [];
     historico.push(valorFinal.toFixed(2));
-    if (historico.length > 40) {
+    if (historico.length > 5) {
         historico.shift();
     }
     localStorage.setItem('historico', JSON.stringify(historico));
